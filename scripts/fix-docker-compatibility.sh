@@ -56,7 +56,7 @@ echo "Current Docker version: $CURRENT_VERSION"
 # Check if Docker version is 29.x or higher
 if version_greater_than "$CURRENT_VERSION" "28.9.9"; then
     print_script_step "Docker version $CURRENT_VERSION is >= 29.x, which has compatibility issues with Traefik"
-    print_script_step "Downgrading to Docker 28.5.2"
+    print_script_step "Downgrading Docker to a compatible version (latest 28.x)"
 
     # Remove current Docker installation
     print_script_step "Removing current Docker installation"
