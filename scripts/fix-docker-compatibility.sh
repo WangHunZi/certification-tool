@@ -16,8 +16,7 @@
 # limitations under the License.
 
 # This script fixes Docker 29.x compatibility issues with Traefik
-# by downgrading to Docker 28.5.2 which is compatible with the current
-# certification tool configuration.
+# by downgrading to the latest compatible Docker 28.x version.
 
 set -e
 
